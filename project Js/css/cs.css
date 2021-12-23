@@ -1,0 +1,586 @@
+/* start global rool*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*media coire small medum large*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/**/
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* start landing page*/
+
+.landing_page {
+  min-height: 100vh;
+  background-image: url(../img/p9.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.landing_page .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.headerr {
+  position: fixed;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  background-color: black;
+   
+  
+}
+
+.headerr .logo {
+  width: 600px;
+  padding: 15px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(253, 250, 250);
+}
+
+.headerr .link {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 60px;
+  
+}
+.headerr .link li {
+  display: inline-block;
+  margin-left: 20px;
+  
+}
+
+.headerr .link li a {
+  text-decoration: none;
+  color: rgb(244, 240, 255);
+  transition: 0.3s;
+}
+
+.headerr .link li a:hover {
+  color: crimson;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(223, 153, 24);
+}
+/* end landing page*/
+
+/*  */
+/*  */
+/*  */
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* دى ع نعمل اوبشن */
+
+/* start setting box  */
+.setting-box {
+  position: fixed;
+  left: -200px;
+  top: 0px;
+  background-color: black;
+  width: 200px;
+  z-index: 1;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.setting-box.open {
+  left: 0;
+}
+.setting-box .togle-setting {
+  position: absolute;
+  right: -40px;
+  top: 100px;
+  background-color: rgb(12, 12, 12);
+  padding: 8px 0;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.setting-container .option-box {
+  padding: 20px;
+}
+
+.setting-container .option-box h4 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.setting-container {
+  /* background-color: rgb(217, 242, 243); */
+  margin-top: 20px;
+}
+.setting-container .color-box {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+
+.setting-container .color-box li {
+  /* width: 20px;
+  height: 20px; */
+  cursor: pointer;
+  /* background-color: #333; */
+  /* border-radius: 50%; */
+  /* درجة اللون */
+  opacity: 0.5;
+  
+  /* / display: inline-block; */
+}
+
+/* .setting-container .color-box li:first-child {
+  background-color: red;
+}
+.setting-container .color-box li:nth-child(2) {
+  background-color: green;
+}
+.setting-container .color-box li:nth-child(3) {
+  background-color: rgb(179, 255, 0);
+}
+.setting-container .color-box li:nth-child(4) {
+  background-color: rgb(98, 0, 255); */
+}
+/* end setting box  */
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* start about aus */
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: inline-flex;
+}
+
+.about-us .info-box {
+  flex: 1;
+}
+.about-us .info-box h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  color: cadetblue;
+}
+
+.about-us .info-box p {
+  font-weight: bolder;
+  line-height: 1.8;
+}
+.about-us .img-box {
+  flex: 1;
+  text-align: center;
+}
+/* end about aus */
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* start skills */
+
+.skil {
+  background-color: rgb(220, 251, 252);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skil h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  color: rgb(183, 192, 192);
+  text-align: center;
+}
+
+.skil .skil-box {
+  background-color: white;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.skil .skil-box .skil-name {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.skil .skil-box .skil-progress {
+  height: 30px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  position: relative;
+}
+
+.skil .skil-box .skil-progress .s1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  background-color: rgb(71, 255, 80);
+}
+.skil .skil-box .skil-progress .s2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background-color: rgb(71, 255, 80);
+}
+.skil .skil-box .skil-progress .s3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(71, 255, 80);
+}
+/* end skills */
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* start gallary */
+
+.gallary {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallary h2 {
+  font-weight: bolder;
+  text-align: center;
+  color: cadetblue;
+  font-size: 30px;
+}
+.gallary .img-list {
+  text-align: center;
+}
+.gallary .img-list img {
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  background-color: chartreuse;
+  border: 1px solid black;
+  margin: 5px;
+  cursor: pointer;
+}
+/* end gallary */
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/*  start popup overlay */
+.popup-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  padding: 20px;
+  border: 10px solid #ccc;
+  background-color: seagreen;
+}
+
+.popup-box h2 {
+  text-align: center;
+}
+.popup-box img {
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+}
+
+/* close span */
+.sanad {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  top: -1px;
+  right: -1px;
+  height: 30px;
+  width: 30px;
+  color: rgb(252, 248, 248);
+  background-color: red;
+}
+/* end popup overlay */
+
+/* <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --> */
+
+/* start feater (after gallary) */
+
+.feater {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 750px;
+}
+
+.feater h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(156, 146, 146);
+  font-size: 40px;
+}
+
+.feater .fead-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 90px;
+}
+.feater .fead-box {
+  width: calc(100% / 4);
+  margin-bottom: 40px;
+  text-align: center;
+  float: left;
+}
+
+.feater .fead-box h4 {
+  margin: 15px 0 40px;
+  position: relative;
+}
+
+.feater .fead-box h4:before {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: darkcyan;
+  position: absolute;
+  margin-left: 30px;
+  bottom: -22px;
+}
+
+/* end feater (after gallary) */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start testimonilos */
+
+.testimoniols
+{
+  position: relative;
+  min-height: 600px;
+}
+
+.testimoniols:before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(147, 150, 144);
+}
+
+.testimoniols:after
+{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(87, 88, 86);
+}
+
+.testimoniols h2
+{
+  font-weight: bolder;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin: 0 0 30px;
+  z-index: 2;
+  position: relative;
+}
+
+
+.testimoniols .ts-box
+{
+  position: relative;
+  z-index: 2;
+  width: calc(98% /3);
+  float: left;
+  background-color: white;
+  font-size: 22px;
+  padding: 20px;
+min-height: 300px;
+max-height: 300px;
+  margin-bottom: 3px;
+  
+}
+.testimoniols .ts-box:not(:last-of-type)
+{
+  margin-right: 1px;
+}
+
+.testimoniols .ts-box img
+{
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.testimoniols .ts-box h3
+{
+  margin-top: 80px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////// end testimonilos */
+.contact
+{
+  min-height: 600px;
+  background-image: url('../img/p0.jpg');
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.contact .overlay
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+ 
+.contact h2
+{
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 0 60px;
+  text-align: center;
+  color: cadetblue;
+}
+
+.contact form
+{
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+.contact form .left
+{
+  float: left;
+  width: 49%;
+}
+
+.contact form .right
+{
+  float: right;  
+  width: 49%;
+}
+
+.contact form input:not([type="submit"]) ,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border:  1px solid #ccc;
+}
+
+.contact form input:not([type="submit"]):focus ,
+.contact form textarea:focus {
+  outline: 1px solid rgba(204, 60, 60, 0.945);
+}
+ 
+.contact form input
+{
+  height: 40px;
+}
+
+.contact form textarea
+{
+  height: 150px;
+}
+ 
+.contact form input[type="submit"]
+{
+padding: 10px;
+width: 100%;
+border-color: transparent;
+background-color: darkgreen;
+color: #fff;
+cursor: pointer;
+}
+
+.contact form textarea:focus::-webkit-input-placeholder,
+ .contact form input:not([type="submit"]):focus::-webkit-input-placeholder{
+opacity: 0;
+transition: .3s ;
+ }
+
+ .contact form textarea:focus:-ms-input-placeholder,
+ .contact form input:not([type="submit"]):focus:-ms-input-placeholder{
+  opacity: 0;
+  transition: .3s ;
+ }
+  
+ .contact form textarea:focus::placeholder,
+ .contact form input:not([type="submit"]):focus::placeholder{
+  opacity: 0;
+  transition: .3s ;
+ }
+
+
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
